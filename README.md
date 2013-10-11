@@ -8,7 +8,7 @@ Diego Williams Aguilar Montaño
 
 Descripción de la práctica
 --------------------------
-La práctica consiste en crear ........un template index.haml en el directorio views para el ejemplo "[Un Ejemplo Simple: Piedra, Papel, tijeras](http://nereida.deioc.ull.es/~lpp/perlexamples/node353.html)", una vez creado el index.haml se realizaron las modificaciones en el fichero rps.rb para que carge a través del servidor rack el template creado.
+La práctica consiste en añadir una hoja de estilo ........un template index.haml en el directorio views para el ejemplo "[Un Ejemplo Simple: Piedra, Papel, tijeras](http://nereida.deioc.ull.es/~lpp/perlexamples/node353.html)", una vez creado el index.haml se realizaron las modificaciones en el fichero rps.rb para que carge a través del servidor rack el template creado.
 
 
 Instrucciones
