@@ -33,8 +33,7 @@ module RockPaperScissors
       res = Rack::Response.new
       res.write engine.render(
         {},
-        :answer => answer, 
-        :choose => @choose,
+        :answer => answer,
         :throws => @throws,
         :computer_throw => computer_throw,
         :player_throw => player_throw)
