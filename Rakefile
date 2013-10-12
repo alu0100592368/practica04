@@ -1,6 +1,6 @@
 desc "Ejecutar el cliente"
 task :default do
-  sh "ruby rps.rb"
+  sh "rackup"
 end
 
 desc "Ejecutar el cliente con la eleccion de Rock"
