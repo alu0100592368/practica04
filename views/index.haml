@@ -80,39 +80,70 @@
           %i.icon-chevron-down.icon-large
       / /GO BTN WRAPPER
     / / HEADER
-    / SECTION-1
-    %section#Section-1
-      .container
-        .row
-          .span12.page-header.text-center
-            %h3 Elección de la máquina: #{computer_throw}
-            %br/
-            %h3 Elección del jugador: #{player_throw}
-            %br/
-            %h3= answer
+    - if !player_throw
+      / SECTION-1
+      %section#Section-1
+        .container
+          .row
+            .span12.page-header.text-center
+              %h3= answer
+          %br/
+          .row-fluid
+            .span4.text-center.box
+              %div
+                %img{alt: "Icono Piedra", src: "public/images/rock-icon.png"}/
+              %br/
+              %p
+                %a.btn.btn-large{:href => '?choice=Piedra'} PIEDRA
+            .span4.text-center.box
+              %div
+                %img{alt: "Icono Papel", src: "public/images/paper-icon.png"}/
+              %br/
+              %p
+                %a.btn.btn-large{:href => '?choice=Papel'} PAPEL
+            .span4.text-center.box
+              %div
+                %img{alt: "Icono Tijera", src: "public/images/scissor-icon.png"}/
+              %br/
+              %p
+                %a.btn.btn-large{:href => '?choice=Tijera'} TIJERA
+        / / CONTAINER
         %br/
-        .row-fluid
-          .span4.text-center.box
-            %div
-              %img{alt: "Icono Piedra", src: "public/images/rock-icon.png"}/
-            %br/
-            %p
-              %a.btn.btn-large{:href => '?choice=Piedra'} PIEDRA
-          .span4.text-center.box
-            %div
-              %img{alt: "Icono Papel", src: "public/images/paper-icon.png"}/
-            %br/
-            %p
-              %a.btn.btn-large{:href => '?choice=Papel'} PAPEL
-          .span4.text-center.box
-            %div
-              %img{alt: "Icono Tijera", src: "public/images/scissor-icon.png"}/
-            %br/
-            %p
-              %a.btn.btn-large{:href => '?choice=Tijera'} TIJERA
-      / / CONTAINER
-      %br/
-    / / SECTION-1
+      / / SECTION-1
+    - else
+      / SECTION-1
+      %section#Section-1
+        .container
+          .row
+            .span12.page-header.text-center
+              %h3 Elección de la máquina: #{computer_throw}
+              %br/
+              %h3 Elección del jugador: #{player_throw}
+              %br/
+              %h3= answer
+          %br/
+          .row-fluid
+            .span4.text-center.box
+              %div
+                %img{alt: "Icono Piedra", src: "public/images/rock-icon.png"}/
+              %br/
+              %p
+                %a.btn.btn-large{:href => '?choice=Piedra'} PIEDRA
+            .span4.text-center.box
+              %div
+                %img{alt: "Icono Papel", src: "public/images/paper-icon.png"}/
+              %br/
+              %p
+                %a.btn.btn-large{:href => '?choice=Papel'} PAPEL
+            .span4.text-center.box
+              %div
+                %img{alt: "Icono Tijera", src: "public/images/scissor-icon.png"}/
+              %br/
+              %p
+                %a.btn.btn-large{:href => '?choice=Tijera'} TIJERA
+        / / CONTAINER
+        %br/
+      / / SECTION-1
     / SECTION-2
     %section#Section-2
       .container
