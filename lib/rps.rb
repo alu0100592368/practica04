@@ -19,17 +19,11 @@ module RockPaperScissors
       answer = if !@throws.include?(player_throw)
           "Elija una de las tres opciones:"
         elsif player_throw == computer_throw
-          "Elección de la máquina: #{computer_throw}\n
-           Elección del jugador:   #{player_throw}\n
-           ¡Haz empatado con la máquina!"
+          "¡Haz empatado con la máquina!"
         elsif computer_throw == @defeat[player_throw]
-          "Elección de la máquina: #{computer_throw}\n
-           Elección del jugador:   #{player_throw}\n
-           ¡Muyy Biennn! #{player_throw} gana a #{computer_throw}"
+          "¡Muyy Biennn Ganaste! #{player_throw} gana a #{computer_throw}"
         else
-          "Elección de la máquina: #{computer_throw}\n
-           Elección del jugador:   #{player_throw}\n
-           Oops...¡Perdiste! #{computer_throw} gana a #{player_throw}. ¡Suerte la próxima vez!"
+          "Oops...¡Perdiste! #{computer_throw} gana a #{player_throw}. ¡Suerte la próxima vez!"
         end
       engine = Haml::Engine.new File.open("views/index.haml").read
       res = Rack::Response.new

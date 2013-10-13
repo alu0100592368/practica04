@@ -42,7 +42,7 @@
                 %li
                   %a{href: "#foot-sec"} Repositorio
             / /.nav-collapse
-      / Main hero unit for a message with slider
+      / Vista principal con slider
       .hero-unit
         .container
           #myCarousel.carousel.slide
@@ -85,9 +85,11 @@
       .container
         .row
           .span12.page-header.text-center
+            %h3 Elección de la máquina: #{computer_throw}
+            %br/
+            %h3 Elección del jugador: #{player_throw}
+            %br/
             %h3= answer
-        %br/
-        %br/
         %br/
         .row-fluid
           .span4.text-center.box
@@ -95,7 +97,7 @@
               %img{alt: "Icono Piedra", src: "public/images/rock-icon.png"}/
             %br/
             %p
-              %a.btn.btn-large{:href => '?choice=Piedra#Section-1'} PIEDRA
+              %a.btn.btn-large{:href => '?choice=Piedra'} PIEDRA
           .span4.text-center.box
             %div
               %img{alt: "Icono Papel", src: "public/images/paper-icon.png"}/
