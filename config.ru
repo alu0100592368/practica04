@@ -1,3 +1,3 @@
 #Arrancando el servidor
-require './rps.rb'
+require './lib/rps.rb'
 run RockPaperScissors::App.new
