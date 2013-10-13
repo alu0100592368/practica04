@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rack',
-  :branch => 'desarrollo'
-gem 'thin',
-  :branch => 'desarrollo'
-gem 'haml',
-  :branch => 'desarrollo'
+group :desarrollo do
+  gem 'rack',
+  gem 'thin',
+  gem 'haml',
+end
