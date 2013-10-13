@@ -1,3 +1,4 @@
+!!!
 %html{lang: "es"}
   %head
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
@@ -84,7 +85,7 @@
       .container
         .row
           .span12.page-header.text-center
-            %h3 Elija una de las tres opciones:
+            %h3= answer
         %br/
         %br/
         %br/
@@ -94,19 +95,19 @@
               %img{alt: "Icono Piedra", src: "public/images/rock-icon.png"}/
             %br/
             %p
-              %a.btn.btn-large{href: "http://www.bootstrap.com"} PIEDRA
+              %a.btn.btn-large{:href => '?choice=Piedra#Section-1'} PIEDRA
           .span4.text-center.box
             %div
               %img{alt: "Icono Papel", src: "public/images/paper-icon.png"}/
             %br/
             %p
-              %a.btn.btn-large{href: "http://www.bootstrap.com"} PAPEL
+              %a.btn.btn-large{:href => '?choice=Papel'} PAPEL
           .span4.text-center.box
             %div
               %img{alt: "Icono Tijera", src: "public/images/scissor-icon.png"}/
             %br/
             %p
-              %a.btn.btn-large{href: "http://www.bootstrap.com"} TIJERA
+              %a.btn.btn-large{:href => '?choice=Tijera'} TIJERA
       / / CONTAINER
       %br/
     / / SECTION-1
