@@ -1,6 +1,7 @@
 require 'rack/request'
 require 'rack/response'
 require 'haml'
+require 'pry-debugger'
  
 module RockPaperScissors
   class App
