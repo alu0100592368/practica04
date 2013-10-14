@@ -5,3 +5,8 @@ group :desarrollo do
   gem "thin"
   gem "haml"
 end
+
+group :testing do
+  gem "debugger"
+  gem "pry"
+  gem "pry-debugger"
