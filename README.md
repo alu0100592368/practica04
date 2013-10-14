@@ -19,7 +19,8 @@ Instrucciones
         $ rake
 
 2. El servidor arrancará.
-3. Ahora visitamos la página [http://localhost:8080](http://localhost:8080) en el navegador preferido.
+3. Ahora visitamos la página [http://localhost:8080](http://localhost:8080) en el navegador preferido.  
+
 ---
 
 Universidad de La Laguna  
