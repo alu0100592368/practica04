@@ -10,3 +10,4 @@ group :testing do
   gem "debugger"
   gem "pry"
   gem "pry-debugger"
+end
